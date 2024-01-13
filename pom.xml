@@ -118,7 +118,7 @@
         <!-- Other -->
         <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
         <!-- FIXME: update to latest version -->
-        <jakarta-annotation-api.version>1.3.5</jakarta-annotation-api.version>
+        <jakarta-annotation-api.version>2.1.1</jakarta-annotation-api.version>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <google-guava.version>33.0.0-jre</google-guava.version>
         <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
