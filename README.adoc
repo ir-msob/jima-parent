@@ -1,0 +1,48 @@
+= Jima Parent
+:toc: left
+:icons: font
+:source-highlighter: rouge
+
+== Introduction
+
+Jima is a Java-based project that uses Maven for dependency management. It's designed to provide a set of common dependencies and properties for all Jima modules.
+
+== Getting Started
+
+To get started with Jima, clone the repository and import it into your favorite IDE. Ensure you have Maven installed and use it to manage the project dependencies.
+
+To use Jima as a Bill of Materials (BOM) in your project, add the following to your `pom.xml`:
+
+[source,xml]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.jima</groupId>
+            <artifactId>jima-bom</artifactId>
+            <version>1.0.0</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+To use Jima Parent as the parent of your project, add the following to your `pom.xml`:
+
+[source,xml]
+----
+<parent>
+    <groupId>com.jima</groupId>
+    <artifactId>jima-parent</artifactId>
+    <version>1.0.0</version>
+</parent>
+----
+
+== Contributing
+
+Contributions to Jima are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+== License
+
+Jima is licensed under the Apache License 2.0. Please see the `LICENSE` file for more details.

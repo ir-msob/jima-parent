@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ir.msob.jima.parent</groupId>
+    <artifactId>jima-parent</artifactId>
+    <version>1.1.01</version>
+    <name>jima-parent</name>
+    <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
+    <packaging>pom</packaging>
+    <properties>
+        <!-- MSob -->
+        <jima-parent.version>1.1.01</jima-parent.version>
+
+        <!-- Java -->
+        <java.version>21</java.version>
+        <resource.delimiter>@</resource.delimiter>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Cloud -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+
+        <!-- Spring Boot -->
+        <spring-boot.version>3.2.1</spring-boot.version>
+
+        <!-- Security -->
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <jjwt.version>0.12.3</jjwt.version>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-authorization-server -->
+        <authorization-server.version>1.2.1</authorization-server.version>
+
+        <!-- Swagger -->
+        <!-- https://mvnrepository.com/artifact/io.springfox -->
+        <springfox.version>3.0.0</springfox.version>
+        <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
+        <springfox-annotations.version>1.6.12</springfox-annotations.version>
+
+        <!-- Utils -->
+        <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
+        <modelmapper.version>3.2.0</modelmapper.version>
+        <!-- https://mvnrepository.com/artifact/com.github.fge/json-patch -->
+        <json-patch.version>1.9</json-patch.version>
+        <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+        <json-path.version>2.8.0</json-path.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <apache-commons-logging.version>1.3.0</apache-commons-logging.version>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <apache-commons-io.version>2.15.1</apache-commons-io.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <apache-httpcore.version>4.4.16</apache-httpcore.version>
+        <!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+        <reflections.version>0.10.2</reflections.version> <!---->
+        <!-- https://mvnrepository.com/artifact/org.springframework.batch.extensions/spring-batch-excel -->
+        <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <json.version>20231013</json.version>
+        <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+        <javax-validation-api.version>2.0.1.Final</javax-validation-api.version>
+        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+        <javax-annotation-api.version>1.3.2</javax-annotation-api.version>
+        <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+        <javax-activation.version>1.1.1</javax-activation.version> <!---->
+        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+        <javax-mail.version>1.4.7</javax-mail.version> <!---->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson/jackson-bom -->
+        <jackson.version>2.16.1</jackson.version>
+
+        <!-- Maven -->
+        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
+        <maven-plugin-api.version>3.9.6</maven-plugin-api.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
+        <maven-plugin-annotations.version>3.10.2</maven-plugin-annotations.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-plugin-plugin -->
+        <maven-plugin-plugin.version>3.10.2</maven-plugin-plugin.version>
+
+        <!-- Dev -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+        <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version> <!---->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <projectlombok.version>1.18.30</projectlombok.version>
+
+        <!-- Office -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <apache-poi.version>5.2.5</apache-poi.version>
+
+        <!-- Test -->
+        <!-- https://mvnrepository.com/artifact/com.redis.testcontainers/testcontainers-redis -->
+        <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
+        <!-- https://mvnrepository.com/artifact/com.c4-soft.springaddons/spring-addons-oauth2-test -->
+        <spring-addons-oauth2-test.version>7.3.0</spring-addons-oauth2-test.version>
+        <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
+        <testcontainers.version>1.19.3</testcontainers.version>
+
+        <!-- gRPC -->
+        <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
+        <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
+        <grpc.version>1.60.1</grpc.version>
+
+        <!-- https://mvnrepository.com/artifact/net.devh/grpc-spring-boot-starter -->
+        <grpc-spring-boot-starter.version>2.15.0.RELEASE</grpc-spring-boot-starter.version>
+
+        <!-- Protobuf -->
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+        <protobuf.version>4.0.0-rc-2</protobuf.version>
+        <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
+        <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
+        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+
+        <!-- Other -->
+        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+        <!-- FIXME: update to latest version -->
+        <jakarta-annotation-api.version>1.3.5</jakarta-annotation-api.version>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <google-guava.version>33.0.0-jre</google-guava.version>
+        <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+        <bootstrap.version>5.3.2</bootstrap.version><!-- Usage : rsocket-cluster -->
+        <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
+        <webjars-locator.version>0.50</webjars-locator.version><!-- Usage : rsocket-cluster -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
+        <tika.version>2.9.1</tika.version>
+        <!-- https://mvnrepository.com/artifact/com.github.javaparser/javaparser-core -->
+        <javaparser-core.version>3.25.7</javaparser-core.version>
+
+        <!-- Data -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
+        <redis.version>3.2.1</redis.version>
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <redisson.version>3.25.2</redisson.version>
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+        <version-starter.version>3.25.2</version-starter.version>
+
+        <!-- Resource -->
+        <!-- https://mvnrepository.com/artifact/io.minio/minio -->
+        <minio.version>8.5.7</minio.version>
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
+        <activiti.version>7.1.0.M6</activiti.version>
+
+        <!-- Front -->
+        <!-- https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin -->
+        <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
+        <!-- https://nodejs.org/en/download/ -->
+        <node.version>v20.10.0</node.version>
+        <!-- https://github.com/npm/cli/releases -->
+        <npm.version>10.2.5</npm.version>
+
+    </properties>
+    <modules>
+        <module>bom</module>
+    </modules>
+    <dependencies>
+        <!-- Dev -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+            <version>${projectlombok.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok-maven-plugin</artifactId>
+                <version>${lombok-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>delombok</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
+                <configuration>
+                    <buildArgs>
+                        <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+                        <buildArg>--verbose</buildArg>
+                        <buildArg>--initialize-at-build-time='org.jooq.SQLDialect$ThirdParty'</buildArg>
+                    </buildArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
