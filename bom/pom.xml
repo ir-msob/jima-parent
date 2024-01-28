@@ -5,7 +5,7 @@
     <parent>
         <groupId>ir.msob.jima.parent</groupId>
         <artifactId>jima-parent</artifactId>
-        <version>1.1.01</version>
+        <version>1.1.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>jima-bom</artifactId>
@@ -158,30 +158,6 @@
                 <groupId>org.json</groupId>
                 <artifactId>json</artifactId>
                 <version>${json.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>${javax-validation-api.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
-            <dependency>
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>${javax-annotation-api.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
-            <dependency>
-                <groupId>javax.activation</groupId>
-                <artifactId>activation</artifactId>
-                <version>${javax-activation.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-            <dependency>
-                <groupId>javax.mail</groupId>
-                <artifactId>mail</artifactId>
-                <version>${javax-mail.version}</version>
             </dependency>
 
             <!-- Maven -->
