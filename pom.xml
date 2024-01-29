@@ -38,7 +38,7 @@
         <!-- https://mvnrepository.com/artifact/io.springfox -->
         <springfox.version>3.0.0</springfox.version>
         <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
-        <springfox-annotations.version>1.6.12</springfox-annotations.version>
+        <springfox-annotations.version>1.6.13</springfox-annotations.version>
 
         <!-- Utils -->
         <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
