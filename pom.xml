@@ -96,7 +96,7 @@
         <!-- https://mvnrepository.com/artifact/com.c4-soft.springaddons/spring-addons-oauth2-test -->
         <spring-addons-oauth2-test.version>7.4.0</spring-addons-oauth2-test.version>
         <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
-        <testcontainers.version>1.19.4</testcontainers.version>
+        <testcontainers.version>1.19.5</testcontainers.version>
 
         <!-- gRPC -->
         <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
