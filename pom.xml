@@ -94,7 +94,7 @@
         <!-- https://mvnrepository.com/artifact/com.redis.testcontainers/testcontainers-redis -->
         <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
         <!-- https://mvnrepository.com/artifact/com.c4-soft.springaddons/spring-addons-oauth2-test -->
-        <spring-addons-oauth2-test.version>7.3.7</spring-addons-oauth2-test.version>
+        <spring-addons-oauth2-test.version>7.4.0</spring-addons-oauth2-test.version>
         <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
         <testcontainers.version>1.19.4</testcontainers.version>
 
