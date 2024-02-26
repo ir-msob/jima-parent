@@ -105,7 +105,7 @@
         <grpc.version>1.61.1</grpc.version>
 
         <!-- https://mvnrepository.com/artifact/net.devh/grpc-spring-boot-starter -->
-        <grpc-spring-boot-starter.version>2.15.0.RELEASE</grpc-spring-boot-starter.version>
+        <grpc-spring-boot-starter.version>3.0.0.RELEASE</grpc-spring-boot-starter.version>
 
         <!-- Protobuf -->
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
