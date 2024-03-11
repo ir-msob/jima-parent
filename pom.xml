@@ -109,7 +109,7 @@
 
         <!-- Protobuf -->
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
-        <protobuf.version>4.26.0-RC2</protobuf.version>
+        <protobuf.version>4.26.0-RC3</protobuf.version>
         <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
         <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
