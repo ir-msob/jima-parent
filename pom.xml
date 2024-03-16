@@ -4,10 +4,30 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <name>jima-parent</name>
     <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
+    <url>http://www.msob.ir</url>
     <packaging>pom</packaging>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Jima</name>
+            <email>ask@msob.ir</email>
+            <organization>MSob</organization>
+            <organizationUrl>http://www.msob.ir</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <url>scm:git:https://github.com/ir-msob/jima-parent.git</url>
+        <connection>scm:git:https://github.com/ir-msob/jima-parent.git</connection>
+        <developerConnection>scm:git:https://github.com/ir-msob/jima-parent.git</developerConnection>
+    </scm>
     <properties>
         <!-- MSob -->
         <jima-parent.version>1.1.4</jima-parent.version>
@@ -79,6 +99,14 @@
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
         <maven-failsafe-plugin.version>3.2.5</maven-failsafe-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+        <central-publishing-maven-plugin.version>0.3.1</central-publishing-maven-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
+        <maven-gpg-plugin.version>3.2.0</maven-gpg-plugin.version>
 
         <!-- Dev -->
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
@@ -240,5 +268,63 @@
             </plugin>
         </plugins>
     </build>
-
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>${central-publishing-maven-plugin.version}</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <tokenAuth>true</tokenAuth>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${maven-source-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven-javadoc-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${maven-gpg-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
