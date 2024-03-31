@@ -151,7 +151,7 @@
         <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
         <bootstrap.version>5.3.3</bootstrap.version><!-- Usage : rsocket-cluster -->
         <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
-        <webjars-locator.version>0.50</webjars-locator.version><!-- Usage : rsocket-cluster -->
+        <webjars-locator.version>0.52</webjars-locator.version><!-- Usage : rsocket-cluster -->
         <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
         <tika.version>2.9.1</tika.version>
         <!-- https://mvnrepository.com/artifact/com.github.javaparser/javaparser-core -->
