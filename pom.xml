@@ -72,7 +72,7 @@
         <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
         <apache-commons-logging.version>1.3.1</apache-commons-logging.version>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <apache-commons-io.version>2.15.1</apache-commons-io.version>
+        <apache-commons-io.version>2.16.0</apache-commons-io.version>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
         <apache-httpcore.version>4.4.16</apache-httpcore.version>
         <!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
