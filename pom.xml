@@ -149,7 +149,7 @@
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <google-guava.version>33.0.0-jre</google-guava.version>
         <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-        <bootstrap.version>5.3.2</bootstrap.version><!-- Usage : rsocket-cluster -->
+        <bootstrap.version>5.3.3</bootstrap.version><!-- Usage : rsocket-cluster -->
         <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
         <webjars-locator.version>0.50</webjars-locator.version><!-- Usage : rsocket-cluster -->
         <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
