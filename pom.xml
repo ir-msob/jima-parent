@@ -43,7 +43,7 @@
 
         <!-- Cloud -->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <spring-cloud.version>2023.0.1</spring-cloud.version>
 
         <!-- Spring Boot -->
         <spring-boot.version>3.2.2</spring-boot.version>
