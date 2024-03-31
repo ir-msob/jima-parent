@@ -82,7 +82,7 @@
         <!-- https://mvnrepository.com/artifact/org.json/json -->
         <json.version>20240303</json.version>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson/jackson-bom -->
-        <jackson.version>2.16.1</jackson.version>
+        <jackson.version>2.17.0</jackson.version>
 
         <!-- Maven -->
         <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
