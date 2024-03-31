@@ -167,7 +167,7 @@
 
         <!-- Resource -->
         <!-- https://mvnrepository.com/artifact/io.minio/minio -->
-        <minio.version>8.5.8</minio.version>
+        <minio.version>8.5.9</minio.version>
         <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
         <activiti.version>7.1.0.M6</activiti.version>
 
