@@ -80,7 +80,7 @@
         <!-- https://mvnrepository.com/artifact/org.springframework.batch.extensions/spring-batch-excel -->
         <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
         <!-- https://mvnrepository.com/artifact/org.json/json -->
-        <json.version>20240205</json.version>
+        <json.version>20240303</json.version>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson/jackson-bom -->
         <jackson.version>2.16.1</jackson.version>
 
