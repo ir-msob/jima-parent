@@ -20,7 +20,7 @@ To use Jima as a Bill of Materials (BOM) in your project, add the following to y
         <dependency>
             <groupId>ir.msob.jima.parent</groupId>
             <artifactId>jima-bom</artifactId>
-            <version>1.1.5</version>
+            <version>1.1.6</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -35,7 +35,7 @@ To use Jima Parent as the parent of your project, add the following to your `pom
 <parent>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>1.1.5</version>
+    <version>1.1.6</version>
 </parent>
 ----
 

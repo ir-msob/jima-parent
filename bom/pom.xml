@@ -5,7 +5,7 @@
     <parent>
         <groupId>ir.msob.jima.parent</groupId>
         <artifactId>jima-parent</artifactId>
-        <version>1.1.5</version>
+        <version>1.1.6</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>jima-bom</artifactId>
