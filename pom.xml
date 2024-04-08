@@ -155,7 +155,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
         <tika.version>2.9.2</tika.version>
         <!-- https://mvnrepository.com/artifact/com.github.javaparser/javaparser-core -->
-        <javaparser-core.version>3.25.9</javaparser-core.version>
+        <javaparser-core.version>3.25.10</javaparser-core.version>
 
         <!-- Data -->
         <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
