@@ -5,7 +5,7 @@
     <parent>
         <groupId>ir.msob.jima.parent</groupId>
         <artifactId>jima-parent</artifactId>
-        <version>1.1.7</version>
+        <version>1.1.8</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>jima-bom</artifactId>
@@ -228,6 +228,12 @@
                 <groupId>org.testcontainers</groupId>
                 <artifactId>minio</artifactId>
                 <version>${testcontainers.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
+            <dependency>
+                <groupId>com.github.dasniko</groupId>
+                <artifactId>testcontainers-keycloak</artifactId>
+                <version>${testcontainers-keycloak.version}</version>
             </dependency>
 
             <!-- gRPC -->
