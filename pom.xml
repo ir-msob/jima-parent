@@ -134,7 +134,7 @@
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
         <grpc.version>1.63.0</grpc.version>
         <!-- https://mvnrepository.com/artifact/net.devh/grpc-spring-boot-starter -->
-        <grpc-spring-boot-starter.version>3.0.0.RELEASE</grpc-spring-boot-starter.version>
+        <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
 
         <!-- Protobuf -->
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
