@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>1.1.8</version>
+    <version>1.1.9</version>
     <name>jima-parent</name>
     <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
     <url>http://www.msob.ir</url>
@@ -30,7 +30,7 @@
     </scm>
     <properties>
         <!-- MSob -->
-        <jima-parent.version>1.1.8</jima-parent.version>
+        <jima-parent.version>1.1.9</jima-parent.version>
 
         <!-- Java -->
         <java.version>21</java.version>
@@ -127,6 +127,8 @@
         <testcontainers.version>1.19.7</testcontainers.version>
         <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
         <testcontainers-keycloak.version>3.3.0</testcontainers-keycloak.version>
+        <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-test -->
+        <reactor-test.version>3.6.5</reactor-test.version>
 
         <!-- gRPC -->
         <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
