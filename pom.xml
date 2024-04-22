@@ -166,7 +166,7 @@
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
         <redisson.version>3.28.0</redisson.version>
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
-        <version-starter.version>3.28.0</version-starter.version>
+        <version-starter.version>3.29.0</version-starter.version>
 
         <!-- Resource -->
         <!-- https://mvnrepository.com/artifact/io.minio/minio -->
