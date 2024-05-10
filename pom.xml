@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>1.1.9</version>
+    <version>1.1.10</version>
     <name>jima-parent</name>
     <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
     <url>http://www.msob.ir</url>
@@ -30,7 +30,7 @@
     </scm>
     <properties>
         <!-- MSob -->
-        <jima-parent.version>1.1.9</jima-parent.version>
+        <jima-parent.version>1.1.10</jima-parent.version>
 
         <!-- Java -->
         <java.version>21</java.version>
@@ -121,10 +121,8 @@
         <!-- Test -->
         <!-- https://mvnrepository.com/artifact/com.redis.testcontainers/testcontainers-redis -->
         <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
-        <!-- https://mvnrepository.com/artifact/com.c4-soft.springaddons/spring-addons-oauth2-test -->
-        <spring-addons-oauth2-test.version>7.6.13</spring-addons-oauth2-test.version>
         <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
-        <testcontainers.version>1.19.7</testcontainers.version>
+        <testcontainers.version>1.19.8</testcontainers.version>
         <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
         <testcontainers-keycloak.version>3.3.1</testcontainers-keycloak.version>
         <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-test -->

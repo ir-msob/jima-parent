@@ -5,11 +5,11 @@
     <parent>
         <groupId>ir.msob.jima.parent</groupId>
         <artifactId>jima-parent</artifactId>
-        <version>1.1.9</version>
+        <version>1.1.10</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>jima-bom</artifactId>
-    <name>jima-bom</name>
+    <artifactId>jima-parent-bom</artifactId>
+    <name>jima-parent-bom</name>
     <description>This is the Bill of Materials (BOM) for the Jima framework. It manages the dependencies used across the different modules of the project.</description>
     <packaging>pom</packaging>
     <dependencyManagement>
@@ -216,12 +216,6 @@
                 <groupId>com.redis.testcontainers</groupId>
                 <artifactId>testcontainers-redis</artifactId>
                 <version>${testcontainers-redis.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.c4-soft.springaddons/spring-addons-oauth2-test -->
-            <dependency>
-                <groupId>com.c4-soft.springaddons</groupId>
-                <artifactId>spring-addons-oauth2-test</artifactId>
-                <version>${spring-addons-oauth2-test.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.testcontainers/minio -->
             <dependency>
