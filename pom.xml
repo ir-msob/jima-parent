@@ -148,7 +148,7 @@
         <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
         <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <google-guava.version>33.2.0-jre</google-guava.version>
+        <google-guava.version>33.2.1-jre</google-guava.version>
         <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
         <bootstrap.version>5.3.3</bootstrap.version><!-- Usage : rsocket-cluster -->
         <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
