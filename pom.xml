@@ -90,7 +90,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
         <maven-plugin-annotations.version>3.13.0</maven-plugin-annotations.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-plugin-plugin -->
-        <maven-plugin-plugin.version>3.13.0</maven-plugin-plugin.version>
+        <maven-plugin-plugin.version>3.13.1</maven-plugin-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
