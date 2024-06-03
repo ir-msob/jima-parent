@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>1.1.10</version>
+    <version>${jima.version}</version>
     <name>jima-parent</name>
     <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
     <url>http://www.msob.ir</url>
@@ -30,7 +30,7 @@
     </scm>
     <properties>
         <!-- MSob -->
-        <jima-parent.version>1.1.10</jima-parent.version>
+        <jima.version>1.2.0</jima.version>
 
         <!-- Java -->
         <java.version>21</java.version>
@@ -107,6 +107,8 @@
         <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
         <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
+        <!-- https://mvnrepository.com/artifact/com.hbakkum.maven.plugins/resolve-parent-version-maven-plugin -->
+        <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
 
         <!-- Dev -->
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
@@ -196,6 +198,18 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.hbakkum.maven.plugins</groupId>
+                <artifactId>resolve-parent-version-maven-plugin</artifactId>
+                <version>${resolve-parent-version-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resolve-parent-version</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok-maven-plugin</artifactId>
