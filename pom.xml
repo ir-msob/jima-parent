@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
-    <version>${jima.version}</version>
+    <version>${jima-commons.version}</version>
     <name>jima-parent</name>
     <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
     <url>http://www.msob.ir</url>
@@ -29,8 +29,8 @@
         <developerConnection>scm:git:https://github.com/ir-msob/jima-parent.git</developerConnection>
     </scm>
     <properties>
-        <!-- MSob -->
-        <jima.version>1.2.0</jima.version>
+        <!-- Jima -->
+        <jima-commons.version>1.2.0</jima-commons.version>
 
         <!-- Java -->
         <java.version>21</java.version>
