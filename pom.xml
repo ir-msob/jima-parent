@@ -126,7 +126,7 @@
         <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
         <testcontainers.version>1.19.8</testcontainers.version>
         <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
-        <testcontainers-keycloak.version>3.3.1</testcontainers-keycloak.version>
+        <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
         <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-test -->
         <reactor-test.version>3.6.6</reactor-test.version>
 
