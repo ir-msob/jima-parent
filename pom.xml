@@ -86,7 +86,7 @@
 
         <!-- Maven -->
         <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
-        <maven-plugin-api.version>3.9.7</maven-plugin-api.version>
+        <maven-plugin-api.version>3.9.8</maven-plugin-api.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
         <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-plugin-plugin -->
