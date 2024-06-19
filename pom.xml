@@ -162,7 +162,7 @@
 
         <!-- Data -->
         <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
-        <redis.version>3.3.0</redis.version>
+        <redis.version>3.3.1</redis.version>
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
         <redisson.version>3.31.0</redisson.version>
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
