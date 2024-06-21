@@ -1,350 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>ir.msob.jima.parent</groupId>
-    <artifactId>jima-parent</artifactId>
-    <version>${jima-commons.version}</version>
-    <name>jima-parent</name>
-    <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
-    <url>http://www.msob.ir</url>
-    <packaging>pom</packaging>
-    <licenses>
-        <license>
-            <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <name>Jima</name>
-            <email>ask@msob.ir</email>
-            <organization>MSob</organization>
-            <organizationUrl>http://www.msob.ir</organizationUrl>
-        </developer>
-    </developers>
-    <scm>
-        <url>scm:git:https://github.com/ir-msob/jima-parent.git</url>
-        <connection>scm:git:https://github.com/ir-msob/jima-parent.git</connection>
-        <developerConnection>scm:git:https://github.com/ir-msob/jima-parent.git</developerConnection>
-    </scm>
-    <properties>
-        <!-- Jima -->
-        <jima-commons.version>1.2.0</jima-commons.version>
-
-        <!-- Java -->
-        <java.version>21</java.version>
-        <resource.delimiter>@</resource.delimiter>
-        <maven.compiler.release>${java.version}</maven.compiler.release>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <!-- Cloud -->
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
-        <spring-cloud.version>2023.0.2</spring-cloud.version>
-
-        <!-- Spring Boot -->
-        <spring-boot.version>3.3.1</spring-boot.version>
-
-        <!-- Security -->
-        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
-        <jjwt.version>0.12.5</jjwt.version>
-        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-authorization-server -->
-        <authorization-server.version>1.3.1</authorization-server.version>
-
-        <!-- Swagger -->
-        <!-- https://mvnrepository.com/artifact/io.springfox -->
-        <springfox.version>3.0.0</springfox.version>
-        <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
-        <springfox-annotations.version>1.6.14</springfox-annotations.version>
-
-        <!-- Utils -->
-        <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
-        <modelmapper.version>3.2.0</modelmapper.version>
-        <!-- https://mvnrepository.com/artifact/com.github.fge/json-patch -->
-        <json-patch.version>1.9</json-patch.version>
-        <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
-        <json-path.version>2.9.0</json-path.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-        <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
-        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
-        <apache-commons-logging.version>1.3.2</apache-commons-logging.version>
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <apache-commons-io.version>2.16.1</apache-commons-io.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
-        <apache-httpcore.version>4.4.16</apache-httpcore.version>
-        <!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
-        <reflections.version>0.10.2</reflections.version> <!---->
-        <!-- https://mvnrepository.com/artifact/org.springframework.batch.extensions/spring-batch-excel -->
-        <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
-        <!-- https://mvnrepository.com/artifact/org.json/json -->
-        <json.version>20240303</json.version>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson/jackson-bom -->
-        <jackson.version>2.17.1</jackson.version>
-
-        <!-- Maven -->
-        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
-        <maven-plugin-api.version>3.9.8</maven-plugin-api.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
-        <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-plugin-plugin -->
-        <maven-plugin-plugin.version>3.13.1</maven-plugin-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
-        <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-        <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
-        <maven-failsafe-plugin.version>3.3.0</maven-failsafe-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
-        <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
-        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
-        <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
-        <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
-        <!-- https://mvnrepository.com/artifact/com.hbakkum.maven.plugins/resolve-parent-version-maven-plugin -->
-        <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
-
-        <!-- Dev -->
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
-        <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version> <!---->
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <projectlombok.version>1.18.32</projectlombok.version>
-
-        <!-- Office -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-        <apache-poi.version>5.2.5</apache-poi.version>
-
-        <!-- Test -->
-        <!-- https://mvnrepository.com/artifact/com.redis.testcontainers/testcontainers-redis -->
-        <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
-        <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers -->
-        <testcontainers.version>1.19.8</testcontainers.version>
-        <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
-        <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
-        <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-test -->
-        <reactor-test.version>3.6.7</reactor-test.version>
-
-        <!-- gRPC -->
-        <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
-        <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
-        <grpc.version>1.64.0</grpc.version>
-        <!-- https://mvnrepository.com/artifact/net.devh/grpc-spring-boot-starter -->
-        <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
-
-        <!-- Protobuf -->
-        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
-        <protobuf.version>4.27.1</protobuf.version>
-        <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
-        <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
-        <!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
-        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
-
-        <!-- Other -->
-        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
-        <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <google-guava.version>33.2.1-jre</google-guava.version>
-        <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-        <bootstrap.version>5.3.3</bootstrap.version><!-- Usage : rsocket-cluster -->
-        <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
-        <webjars-locator.version>0.52</webjars-locator.version><!-- Usage : rsocket-cluster -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
-        <tika.version>2.9.2</tika.version>
-        <!-- https://mvnrepository.com/artifact/com.github.javaparser/javaparser-core -->
-        <javaparser-core.version>3.25.10</javaparser-core.version>
-
-        <!-- Data -->
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
-        <redis.version>3.3.1</redis.version>
-        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
-        <redisson.version>3.31.0</redisson.version>
-        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
-        <version-starter.version>3.31.0</version-starter.version>
-
-        <!-- Resource -->
-        <!-- https://mvnrepository.com/artifact/io.minio/minio -->
-        <minio.version>8.5.10</minio.version>
-        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
-        <activiti.version>7.1.0.M6</activiti.version>
-
-        <!-- Front -->
-        <!-- https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin -->
-        <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
-        <!-- https://nodejs.org/en/download/ -->
-        <node.version>v20.10.0</node.version>
-        <!-- https://github.com/npm/cli/releases -->
-        <npm.version>10.2.5</npm.version>
-
-    </properties>
-    <modules>
-        <module>bom</module>
-    </modules>
-    <dependencies>
-        <!-- Dev -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-            <version>${projectlombok.version}</version>
-        </dependency>
-    </dependencies>
-
-    <build>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ir.msob.jima.parent</groupId>
+  <artifactId>jima-parent</artifactId>
+  <version>${jima-commons.version}</version>
+  <packaging>pom</packaging>
+  <name>jima-parent</name>
+  <description>This is a parent project for Jima framework, providing common dependencies and properties.</description>
+  <url>http://www.msob.ir</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Jima</name>
+      <email>ask@msob.ir</email>
+      <organization>MSob</organization>
+      <organizationUrl>http://www.msob.ir</organizationUrl>
+    </developer>
+  </developers>
+  <modules>
+    <module>bom</module>
+  </modules>
+  <scm>
+    <connection>scm:git:https://github.com/ir-msob/jima-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/ir-msob/jima-parent.git</developerConnection>
+    <url>scm:git:https://github.com/ir-msob/jima-parent.git</url>
+  </scm>
+  <properties>
+    <version-starter.version>3.31.0</version-starter.version>
+    <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
+    <springfox-annotations.version>1.6.14</springfox-annotations.version>
+    <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
+    <springfox.version>3.0.0</springfox.version>
+    <google-guava.version>33.2.1-jre</google-guava.version>
+    <maven-plugin-plugin.version>3.13.1</maven-plugin-plugin.version>
+    <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
+    <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
+    <reflections.version>0.10.2</reflections.version>
+    <jackson.version>2.17.1</jackson.version>
+    <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
+    <spring-cloud.version>2023.0.2</spring-cloud.version>
+    <json-patch.version>1.9</json-patch.version>
+    <bootstrap.version>5.3.3</bootstrap.version>
+    <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
+    <protobuf.version>4.27.1</protobuf.version>
+    <apache-commons-logging.version>1.3.2</apache-commons-logging.version>
+    <npm.version>10.2.5</npm.version>
+    <tika.version>2.9.2</tika.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <activiti.version>7.1.0.M6</activiti.version>
+    <json.version>20240303</json.version>
+    <apache-poi.version>5.2.5</apache-poi.version>
+    <reactor-test.version>3.6.7</reactor-test.version>
+    <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
+    <resource.delimiter>@</resource.delimiter>
+    <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
+    <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
+    <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
+    <testcontainers.version>1.19.8</testcontainers.version>
+    <redisson.version>3.31.0</redisson.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven.compiler.release>${java.version}</maven.compiler.release>
+    <minio.version>8.5.10</minio.version>
+    <apache-commons-io.version>2.16.1</apache-commons-io.version>
+    <apache-httpcore.version>4.4.16</apache-httpcore.version>
+    <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
+    <javaparser-core.version>3.25.10</javaparser-core.version>
+    <spring-boot.version>3.3.1</spring-boot.version>
+    <jima-commons.version>1.2.0</jima-commons.version>
+    <maven-plugin-api.version>3.9.8</maven-plugin-api.version>
+    <webjars-locator.version>0.52</webjars-locator.version>
+    <authorization-server.version>1.3.1</authorization-server.version>
+    <jjwt.version>0.12.5</jjwt.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+    <grpc.version>1.64.0</grpc.version>
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+    <json-path.version>2.9.0</json-path.version>
+    <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
+    <maven-failsafe-plugin.version>3.3.0</maven-failsafe-plugin.version>
+    <java.version>21</java.version>
+    <redis.version>3.3.1</redis.version>
+    <modelmapper.version>3.2.0</modelmapper.version>
+    <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
+    <node.version>v20.10.0</node.version>
+    <projectlombok.version>1.18.32</projectlombok.version>
+    <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${projectlombok.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.hbakkum.maven.plugins</groupId>
+        <artifactId>resolve-parent-version-maven-plugin</artifactId>
+        <version>${resolve-parent-version-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>resolve-parent-version</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok-maven-plugin</artifactId>
+        <version>${lombok-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>delombok</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.graalvm.buildtools</groupId>
+        <artifactId>native-maven-plugin</artifactId>
+        <configuration>
+          <buildArgs>
+            <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+            <buildArg>--verbose</buildArg>
+            <buildArg>--initialize-at-build-time='org.jooq.SQLDialect$ThirdParty'</buildArg>
+          </buildArgs>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>${maven-failsafe-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <includes>
+            <include>**/*IT.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
         <plugins>
-            <plugin>
-                <groupId>com.hbakkum.maven.plugins</groupId>
-                <artifactId>resolve-parent-version-maven-plugin</artifactId>
-                <version>${resolve-parent-version-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>resolve-parent-version</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok-maven-plugin</artifactId>
-                <version>${lombok-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>delombok</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.graalvm.buildtools</groupId>
-                <artifactId>native-maven-plugin</artifactId>
-                <configuration>
-                    <buildArgs>
-                        <buildArg>-H:+ReportExceptionStackTraces</buildArg>
-                        <buildArg>--verbose</buildArg>
-                        <buildArg>--initialize-at-build-time='org.jooq.SQLDialect$ThirdParty'</buildArg>
-                    </buildArgs>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>${maven-failsafe-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <includes>
-                        <include>**/*IT.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>${central-publishing-maven-plugin.version}</version>
+            <extensions>true</extensions>
+            <configuration>
+              <publishingServerId>central</publishingServerId>
+              <tokenAuth>true</tokenAuth>
+              <autoPublish>true</autoPublish>
+              <waitUntil>published</waitUntil>
+            </configuration>
+          </plugin>
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>${maven-source-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${maven-javadoc-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <doclint>all,-missing</doclint>
+            </configuration>
+          </plugin>
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>${maven-gpg-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
-    </build>
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.central</groupId>
-                        <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>${central-publishing-maven-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <publishingServerId>central</publishingServerId>
-                            <tokenAuth>true</tokenAuth>
-                            <autoPublish>true</autoPublish>
-                            <waitUntil>published</waitUntil>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>${maven-source-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <goals>
-                                    <goal>jar-no-fork</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>${maven-javadoc-plugin.version}</version>
-                        <configuration>
-                            <doclint>all,-missing</doclint>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+      </build>
+    </profile>
+  </profiles>
 </project>
