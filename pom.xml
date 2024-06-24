@@ -63,7 +63,7 @@
     <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
     <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
     <testcontainers.version>1.19.8</testcontainers.version>
-    <redisson.version>3.31.0</redisson.version>
+    <redisson.version>3.32.0</redisson.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <maven.compiler.release>${java.version}</maven.compiler.release>
     <minio.version>8.5.10</minio.version>
