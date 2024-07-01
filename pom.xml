@@ -94,7 +94,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
     <node.version>v20.10.0</node.version>
-    <projectlombok.version>1.18.32</projectlombok.version>
+    <projectlombok.version>1.18.34</projectlombok.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
   </properties>
   <dependencies>
