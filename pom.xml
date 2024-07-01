@@ -72,7 +72,7 @@
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
-    <javaparser-core.version>3.25.10</javaparser-core.version>
+    <javaparser-core.version>3.26.1</javaparser-core.version>
     <spring-boot.version>3.3.1</spring-boot.version>
     <jima-commons.version>1.2.0</jima-commons.version>
     <maven-plugin-api.version>3.9.8</maven-plugin-api.version>
