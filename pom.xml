@@ -78,7 +78,7 @@
     <maven-plugin-api.version>3.9.8</maven-plugin-api.version>
     <webjars-locator.version>0.52</webjars-locator.version>
     <authorization-server.version>1.3.1</authorization-server.version>
-    <jjwt.version>0.12.5</jjwt.version>
+    <jjwt.version>0.12.6</jjwt.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     <grpc.version>1.64.0</grpc.version>
