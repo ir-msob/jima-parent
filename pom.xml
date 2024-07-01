@@ -66,7 +66,7 @@
     <redisson.version>3.32.0</redisson.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <maven.compiler.release>${java.version}</maven.compiler.release>
-    <minio.version>8.5.10</minio.version>
+    <minio.version>8.5.11</minio.version>
     <apache-commons-io.version>2.16.1</apache-commons-io.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
