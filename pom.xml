@@ -55,7 +55,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <activiti.version>7.1.0.M6</activiti.version>
     <json.version>20240303</json.version>
-    <apache-poi.version>5.2.5</apache-poi.version>
+    <apache-poi.version>5.3.0</apache-poi.version>
     <reactor-test.version>3.6.7</reactor-test.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
     <resource.delimiter>@</resource.delimiter>
