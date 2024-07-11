@@ -61,7 +61,7 @@
     <resource.delimiter>@</resource.delimiter>
     <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
     <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
-    <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
     <testcontainers.version>1.19.8</testcontainers.version>
     <redisson.version>3.32.0</redisson.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
