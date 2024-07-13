@@ -87,7 +87,7 @@
     <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
     <maven-failsafe-plugin.version>3.3.1</maven-failsafe-plugin.version>
     <java.version>21</java.version>
-    <redis.version>3.3.1</redis.version>
+    <redis.version>3.3.2</redis.version>
     <modelmapper.version>3.2.0</modelmapper.version>
     <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
