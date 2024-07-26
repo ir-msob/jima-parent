@@ -88,7 +88,7 @@
     <maven-failsafe-plugin.version>3.3.1</maven-failsafe-plugin.version>
     <java.version>21</java.version>
     <redis.version>3.3.2</redis.version>
-    <modelmapper.version>3.2.0</modelmapper.version>
+    <modelmapper.version>3.2.1</modelmapper.version>
     <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.target>${java.version}</maven.compiler.target>
