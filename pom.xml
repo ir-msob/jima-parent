@@ -96,6 +96,7 @@
     <node.version>v20.10.0</node.version>
     <projectlombok.version>1.18.34</projectlombok.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
+    <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/reports/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
   <dependencies>
     <dependency>
