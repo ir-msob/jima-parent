@@ -60,7 +60,7 @@
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
     <resource.delimiter>@</resource.delimiter>
     <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
-    <apache-commons-lang3.version>3.15.0</apache-commons-lang3.version>
+    <apache-commons-lang3.version>3.16.0</apache-commons-lang3.version>
     <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
     <testcontainers.version>1.20.1</testcontainers.version>
     <redisson.version>3.34.1</redisson.version>
