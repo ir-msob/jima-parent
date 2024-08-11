@@ -81,7 +81,7 @@
     <jjwt.version>0.12.6</jjwt.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
-    <grpc.version>1.65.1</grpc.version>
+    <grpc.version>1.66.0</grpc.version>
     <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
     <json-path.version>2.9.0</json-path.version>
     <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
