@@ -357,7 +357,7 @@
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
-                <version>${version-starter.version}</version>
+                <version>${redisson-spring-boot-starter.version}</version>
             </dependency>
 
             <!-- Resource -->

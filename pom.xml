@@ -32,7 +32,7 @@
     <url>scm:git:https://github.com/ir-msob/jima-parent.git</url>
   </scm>
   <properties>
-    <version-starter.version>3.34.1</version-starter.version>
+    <redisson-spring-boot-starter.version>3.34.1</redisson-spring-boot-starter.version>
     <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
     <springfox-annotations.version>1.6.14</springfox-annotations.version>
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
@@ -96,7 +96,6 @@
     <node.version>v20.10.0</node.version>
     <projectlombok.version>1.18.34</projectlombok.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
-    <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/reports/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
   <dependencies>
     <dependency>
