@@ -54,7 +54,7 @@
                 <version>${authorization-server.version}</version>
             </dependency>
 
-            <!-- Swagger -->
+            <!-- Swagger and API Documentation -->
             <!-- https://mvnrepository.com/artifact/io.springfox/springfox-core -->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -98,7 +98,7 @@
                 <version>${springfox.version}</version>
             </dependency>
 
-            <!-- Utils -->
+            <!-- Utility Libraries -->
             <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
             <dependency>
                 <groupId>org.modelmapper</groupId>
@@ -147,12 +147,16 @@
                 <artifactId>reflections</artifactId>
                 <version>${reflections.version}</version>
             </dependency>
+
+            <!-- Spring Batch -->
             <!-- https://mvnrepository.com/artifact/org.springframework.batch.extensions/spring-batch-excel -->
             <dependency>
                 <groupId>org.springframework.batch.extensions</groupId>
                 <artifactId>spring-batch-excel</artifactId>
                 <version>${spring-batch-excel.version}</version>
             </dependency>
+
+            <!-- JSON -->
             <!-- https://mvnrepository.com/artifact/org.json/json -->
             <dependency>
                 <groupId>org.json</groupId>
@@ -160,7 +164,7 @@
                 <version>${json.version}</version>
             </dependency>
 
-            <!-- Maven -->
+            <!-- Maven Plugins -->
             <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
             <dependency>
                 <groupId>org.apache.maven</groupId>
@@ -181,7 +185,7 @@
                 <version>${maven-plugin-plugin.version}</version>
             </dependency>
 
-            <!-- Dev -->
+            <!-- Development Tools -->
             <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -197,195 +201,24 @@
                 <scope>provided</scope>
             </dependency>
 
-            <!-- Office -->
+            <!-- Office File Handling -->
             <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>${apache-poi.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>${apache-poi.version}</version>
+                <version>${apache-poi-ooxml.version}</version>
             </dependency>
-
-            <!-- Test -->
-            <!-- https://mvnrepository.com/artifact/com.redis.testcontainers/testcontainers-redis -->
+            <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
             <dependency>
-                <groupId>com.redis.testcontainers</groupId>
-                <artifactId>testcontainers-redis</artifactId>
-                <version>${testcontainers-redis.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.testcontainers/minio -->
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>minio</artifactId>
-                <version>${testcontainers.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.dasniko/testcontainers-keycloak -->
-            <dependency>
-                <groupId>com.github.dasniko</groupId>
-                <artifactId>testcontainers-keycloak</artifactId>
-                <version>${testcontainers-keycloak.version}</version>
-            </dependency>
-
-            <!-- gRPC -->
-            <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
-            <dependency>
-                <groupId>com.salesforce.servicelibs</groupId>
-                <artifactId>reactor-grpc-stub</artifactId>
-                <version>${reactor-grpc-stub.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-stub</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.grpc/grpc-protobuf -->
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-protobuf</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/net.devh/grpc-spring-boot-starter -->
-            <dependency>
-                <groupId>net.devh</groupId>
-                <artifactId>grpc-spring-boot-starter</artifactId>
-                <version>${grpc-spring-boot-starter.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/net.devh/grpc-client-spring-boot-starter -->
-            <dependency>
-                <groupId>net.devh</groupId>
-                <artifactId>grpc-client-spring-boot-starter</artifactId>
-                <version>${grpc-spring-boot-starter.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/net.devh/grpc-server-spring-boot-starter -->
-            <dependency>
-                <groupId>net.devh</groupId>
-                <artifactId>grpc-server-spring-boot-starter</artifactId>
-                <version>${grpc-spring-boot-starter.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/net.devh/grpc-common-spring-boot -->
-            <dependency>
-                <groupId>net.devh</groupId>
-                <artifactId>grpc-common-spring-boot</artifactId>
-                <version>${grpc-spring-boot-starter.version}</version>
-            </dependency>
-
-            <!-- gRPC test-->
-            <!-- https://mvnrepository.com/artifact/io.grpc/grpc-testing -->
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-testing</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <!-- Protobuf -->
-            <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
-            <dependency>
-                <groupId>com.google.protobuf</groupId>
-                <artifactId>protobuf-java</artifactId>
-                <version>${protobuf.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
-            <dependency>
-                <groupId>kr.motd.maven</groupId>
-                <artifactId>os-maven-plugin</artifactId>
-                <version>${os-maven-plugin.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
-            <dependency>
-                <groupId>org.xolstice.maven.plugins</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>${protobuf-maven-plugin.version}</version>
-            </dependency>
-
-            <!-- Other -->
-            <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
-            <dependency>
-                <groupId>jakarta.annotation</groupId>
-                <artifactId>jakarta.annotation-api</artifactId>
-                <version>${jakarta-annotation-api.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${google-guava.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-            <dependency>
-                <groupId>org.webjars</groupId>
-                <artifactId>bootstrap</artifactId>
-                <version>${bootstrap.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
-            <dependency>
-                <groupId>org.webjars</groupId>
-                <artifactId>webjars-locator</artifactId>
-                <version>${webjars-locator.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-core</artifactId>
-                <version>${tika.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.javaparser/javaparser-core -->
-            <dependency>
-                <groupId>com.github.javaparser</groupId>
-                <artifactId>javaparser-core</artifactId>
-                <version>${javaparser-core.version}</version>
-            </dependency>
-
-            <!-- Data -->
-            <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
-            <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-redis</artifactId>
-                <version>${redis.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
-            <dependency>
-                <groupId>org.redisson</groupId>
-                <artifactId>redisson</artifactId>
-                <version>${redisson.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
-            <dependency>
-                <groupId>org.redisson</groupId>
-                <artifactId>redisson-spring-boot-starter</artifactId>
-                <version>${redisson-spring-boot-starter.version}</version>
-            </dependency>
-
-            <!-- Resource -->
-            <!-- https://mvnrepository.com/artifact/io.minio/minio -->
-            <dependency>
-                <groupId>io.minio</groupId>
-                <artifactId>minio</artifactId>
-                <version>${minio.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
-            <dependency>
-                <groupId>org.activiti</groupId>
-                <artifactId>activiti-spring-boot-starter</artifactId>
-                <version>${activiti.version}</version>
-            </dependency>
-
-            <!-- Front -->
-            <!-- https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin -->
-            <dependency>
-                <groupId>com.github.eirslett</groupId>
-                <artifactId>frontend-maven-plugin</artifactId>
-                <version>${frontend-maven-plugin.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-test -->
-            <dependency>
-                <groupId>io.projectreactor</groupId>
-                <artifactId>reactor-test</artifactId>
-                <version>${reactor-test.version}</version>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${apache-poi-ooxml-schemas.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

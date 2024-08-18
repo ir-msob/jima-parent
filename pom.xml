@@ -32,70 +32,106 @@
     <url>scm:git:https://github.com/ir-msob/jima-parent.git</url>
   </scm>
   <properties>
-    <redisson-spring-boot-starter.version>3.34.1</redisson-spring-boot-starter.version>
-    <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
-    <springfox-annotations.version>1.6.14</springfox-annotations.version>
-    <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
-    <springfox.version>3.0.0</springfox.version>
-    <google-guava.version>33.3.0-jre</google-guava.version>
-    <maven-plugin-plugin.version>3.14.0</maven-plugin-plugin.version>
-    <maven-gpg-plugin.version>3.2.5</maven-gpg-plugin.version>
-    <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
-    <reflections.version>0.10.2</reflections.version>
-    <jackson.version>2.17.2</jackson.version>
-    <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
-    <spring-cloud.version>2023.0.3</spring-cloud.version>
-    <json-patch.version>1.9</json-patch.version>
-    <bootstrap.version>5.3.3</bootstrap.version>
-    <maven-javadoc-plugin.version>3.8.0</maven-javadoc-plugin.version>
-    <protobuf.version>4.27.3</protobuf.version>
-    <apache-commons-logging.version>1.3.3</apache-commons-logging.version>
-    <npm.version>10.2.5</npm.version>
-    <tika.version>2.9.2</tika.version>
+    <!-- Java and Maven Compiler Settings -->
+    <java.version>21</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
-    <activiti.version>7.1.0.M6</activiti.version>
-    <json.version>20240303</json.version>
-    <apache-poi.version>5.3.0</apache-poi.version>
-    <reactor-test.version>3.6.9</reactor-test.version>
-    <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-    <resource.delimiter>@</resource.delimiter>
-    <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
-    <apache-commons-lang3.version>3.16.0</apache-commons-lang3.version>
-    <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
-    <testcontainers.version>1.20.1</testcontainers.version>
-    <redisson.version>3.34.1</redisson.version>
-    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.release>${java.version}</maven.compiler.release>
-    <minio.version>8.5.12</minio.version>
-    <apache-commons-io.version>2.16.1</apache-commons-io.version>
-    <apache-httpcore.version>4.4.16</apache-httpcore.version>
-    <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
-    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
-    <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
-    <javaparser-core.version>3.26.1</javaparser-core.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- Spring Framework and Related Libraries -->
     <spring-boot.version>3.3.2</spring-boot.version>
-    <jima-commons.version>1.2.0</jima-commons.version>
-    <maven-plugin-api.version>3.9.9</maven-plugin-api.version>
-    <webjars-locator.version>0.52</webjars-locator.version>
+    <spring-cloud.version>2023.0.3</spring-cloud.version>
+
+    <!-- Security Libraries -->
     <authorization-server.version>1.3.1</authorization-server.version>
     <jjwt.version>0.12.6</jjwt.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
-    <grpc.version>1.66.0</grpc.version>
-    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
-    <json-path.version>2.9.0</json-path.version>
-    <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
-    <maven-failsafe-plugin.version>3.3.1</maven-failsafe-plugin.version>
-    <java.version>21</java.version>
+
+    <!-- Redis and Redisson Libraries -->
+    <redisson-spring-boot-starter.version>3.34.1</redisson-spring-boot-starter.version>
+    <redisson.version>3.34.1</redisson.version>
     <redis.version>3.3.3</redis.version>
-    <modelmapper.version>3.2.1</modelmapper.version>
+
+    <!-- Reactor Libraries -->
+    <reactor-test.version>3.6.9</reactor-test.version>
+
+    <!-- gRPC Libraries -->
+    <grpc.version>1.66.0</grpc.version>
+    <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
+    <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
+
+    <!-- JSON and Jackson Libraries -->
+    <jackson.version>2.17.2</jackson.version>
+    <json-patch.version>1.9</json-patch.version>
+    <json.version>20240303</json.version>
+    <json-path.version>2.9.0</json-path.version>
+
+    <!-- Apache Commons Libraries -->
+    <apache-commons-logging.version>1.3.3</apache-commons-logging.version>
+    <apache-commons-lang3.version>3.16.0</apache-commons-lang3.version>
+    <apache-commons-io.version>2.16.1</apache-commons-io.version>
+
+    <!-- Apache POI and Office Libraries -->
+    <apache-poi.version>5.3.0</apache-poi.version>
+    <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
+
+    <!-- Maven Plugins -->
+    <maven-plugin-plugin.version>3.14.0</maven-plugin-plugin.version>
+    <maven-javadoc-plugin.version>3.8.0</maven-javadoc-plugin.version>
+    <maven-gpg-plugin.version>3.2.5</maven-gpg-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
+    <maven-failsafe-plugin.version>3.3.1</maven-failsafe-plugin.version>
     <maven-plugin-annotations.version>3.14.0</maven-plugin-annotations.version>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
+    <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
+    <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
+    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+
+    <!-- Code Coverage Tools -->
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+
+    <!-- JavaScript and Node.js Tools -->
+    <npm.version>10.2.5</npm.version>
     <node.version>v20.10.0</node.version>
-    <projectlombok.version>1.18.34</projectlombok.version>
+    <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
+
+    <!-- Google Guava Library -->
+    <google-guava.version>33.3.0-jre</google-guava.version>
+
+    <!-- Java Annotations -->
+    <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
+
+    <!-- Other Libraries -->
+    <reflections.version>0.10.2</reflections.version>
+    <tika.version>2.9.2</tika.version>
+    <bootstrap.version>5.3.3</bootstrap.version>
+    <minio.version>8.5.12</minio.version>
+    <modelmapper.version>3.2.1</modelmapper.version>
+    <webjars-locator.version>0.52</webjars-locator.version>
+    <jima-commons.version>1.2.0</jima-commons.version>
+    <javaparser-core.version>3.26.1</javaparser-core.version>
+
+    <!-- Testing Libraries -->
+    <testcontainers.version>1.20.1</testcontainers.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
+    <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
+
+    <!-- Delimiters -->
+    <resource.delimiter>@</resource.delimiter>
+
+    <!-- Lombok for Java -->
+    <projectlombok.version>1.18.34</projectlombok.version>
+    <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
+
+    <!-- Activiti Process Engine -->
+    <activiti.version>7.1.0.M6</activiti.version>
+
+    <!-- Swagger -->
+    <springfox.version>3.0.0</springfox.version>
+    <springfox-annotations.version>1.6.14</springfox-annotations.version>
   </properties>
   <dependencies>
     <dependency>
@@ -107,6 +143,7 @@
   </dependencies>
   <build>
     <plugins>
+      <!-- Resolve Parent Version Plugin -->
       <plugin>
         <groupId>com.hbakkum.maven.plugins</groupId>
         <artifactId>resolve-parent-version-maven-plugin</artifactId>
@@ -119,6 +156,8 @@
           </execution>
         </executions>
       </plugin>
+
+      <!-- Lombok Maven Plugin -->
       <plugin>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok-maven-plugin</artifactId>
@@ -132,6 +171,8 @@
           </execution>
         </executions>
       </plugin>
+
+      <!-- GraalVM Native Image Maven Plugin -->
       <plugin>
         <groupId>org.graalvm.buildtools</groupId>
         <artifactId>native-maven-plugin</artifactId>
@@ -143,6 +184,8 @@
           </buildArgs>
         </configuration>
       </plugin>
+
+      <!-- Maven Surefire Plugin -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire-plugin.version}</version>
@@ -152,6 +195,8 @@
           </includes>
         </configuration>
       </plugin>
+
+      <!-- Maven Failsafe Plugin -->
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
         <version>${maven-failsafe-plugin.version}</version>
@@ -169,6 +214,8 @@
           </includes>
         </configuration>
       </plugin>
+
+      <!-- JaCoCo Maven Plugin -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -195,6 +242,7 @@
       <id>release</id>
       <build>
         <plugins>
+          <!-- Plugin for publishing artifacts to the central repository -->
           <plugin>
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
@@ -207,6 +255,8 @@
               <waitUntil>published</waitUntil>
             </configuration>
           </plugin>
+
+          <!-- Plugin to attach source JARs -->
           <plugin>
             <artifactId>maven-source-plugin</artifactId>
             <version>${maven-source-plugin.version}</version>
@@ -219,6 +269,8 @@
               </execution>
             </executions>
           </plugin>
+
+          <!-- Plugin to generate Javadoc and attach it -->
           <plugin>
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>${maven-javadoc-plugin.version}</version>
@@ -234,6 +286,8 @@
               <doclint>all,-missing</doclint>
             </configuration>
           </plugin>
+
+          <!-- Plugin for signing artifacts with GPG -->
           <plugin>
             <artifactId>maven-gpg-plugin</artifactId>
             <version>${maven-gpg-plugin.version}</version>
