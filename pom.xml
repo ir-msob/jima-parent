@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ir.msob.jima.parent</groupId>
   <artifactId>jima-parent</artifactId>
@@ -60,6 +60,7 @@
     <grpc.version>1.66.0</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
+    <protobuf.version>4.27.3</protobuf.version>
 
     <!-- JSON and Jackson Libraries -->
     <jackson.version>2.17.2</jackson.version>
@@ -89,6 +90,7 @@
     <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
     <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+    <maven-plugin-api.version>3.9.9</maven-plugin-api.version>
 
     <!-- Code Coverage Tools -->
     <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -113,6 +115,7 @@
     <webjars-locator.version>0.52</webjars-locator.version>
     <jima-commons.version>1.2.0</jima-commons.version>
     <javaparser-core.version>3.26.1</javaparser-core.version>
+    <apache-httpcore.version>4.4.16</apache-httpcore.version>
 
     <!-- Testing Libraries -->
     <testcontainers.version>1.20.1</testcontainers.version>
@@ -133,6 +136,7 @@
     <springfox.version>3.0.0</springfox.version>
     <springfox-annotations.version>1.6.14</springfox-annotations.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -242,6 +246,7 @@
       <id>release</id>
       <build>
         <plugins>
+
           <!-- Plugin for publishing artifacts to the central repository -->
           <plugin>
             <groupId>org.sonatype.central</groupId>
