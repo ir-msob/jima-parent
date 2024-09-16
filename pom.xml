@@ -60,7 +60,7 @@
     <grpc.version>1.66.0</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-    <protobuf.version>4.28.0</protobuf.version>
+    <protobuf.version>4.28.1</protobuf.version>
 
     <!-- JSON and Jackson Libraries -->
     <jackson.version>2.17.2</jackson.version>
