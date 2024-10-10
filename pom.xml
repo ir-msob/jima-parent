@@ -119,7 +119,7 @@
 
     <!-- Testing Libraries -->
     <testcontainers.version>1.20.2</testcontainers.version>
-    <testcontainers-keycloak.version>3.5.0</testcontainers-keycloak.version>
+    <testcontainers-keycloak.version>3.5.1</testcontainers-keycloak.version>
     <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
 
     <!-- Delimiters -->
