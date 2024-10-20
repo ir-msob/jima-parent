@@ -108,7 +108,7 @@
 
     <!-- Other Libraries -->
     <reflections.version>0.10.2</reflections.version>
-    <tika.version>2.9.2</tika.version>
+    <tika.version>3.0.0</tika.version>
     <bootstrap.version>5.3.3</bootstrap.version>
     <minio.version>8.5.12</minio.version>
     <modelmapper.version>3.2.1</modelmapper.version>
