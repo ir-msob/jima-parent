@@ -138,6 +138,7 @@
   </properties>
 
   <dependencies>
+    <!-- Lombok Dependency -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -145,6 +146,7 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <!-- Resolve Parent Version Plugin -->
@@ -241,12 +243,12 @@
       </plugin>
     </plugins>
   </build>
+
   <profiles>
     <profile>
       <id>release</id>
       <build>
         <plugins>
-
           <!-- Plugin for publishing artifacts to the central repository -->
           <plugin>
             <groupId>org.sonatype.central</groupId>
