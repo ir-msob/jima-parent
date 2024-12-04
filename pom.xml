@@ -42,7 +42,7 @@
 
     <!-- Spring Framework and Related Libraries -->
     <spring-boot.version>3.4.0</spring-boot.version>
-    <spring-cloud.version>2023.0.3</spring-cloud.version>
+    <spring-cloud.version>2024.0.0</spring-cloud.version>
 
     <!-- Security Libraries -->
     <authorization-server.version>1.4.0</authorization-server.version>
