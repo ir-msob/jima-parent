@@ -110,7 +110,7 @@
     <reflections.version>0.10.2</reflections.version>
     <tika.version>3.0.0</tika.version>
     <bootstrap.version>5.3.3</bootstrap.version>
-    <minio.version>8.5.13</minio.version>
+    <minio.version>8.5.14</minio.version>
     <modelmapper.version>3.2.1</modelmapper.version>
     <webjars-locator.version>0.52</webjars-locator.version>
     <jima-commons.version>1.3.0</jima-commons.version>
