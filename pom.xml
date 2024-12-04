@@ -51,7 +51,7 @@
     <!-- Redis and Redisson Libraries -->
     <redisson-spring-boot-starter.version>3.39.0</redisson-spring-boot-starter.version>
     <redisson.version>3.40.0</redisson.version>
-    <redis.version>3.3.5</redis.version>
+    <redis.version>3.4.0</redis.version>
 
     <!-- Reactor Libraries -->
     <reactor-test.version>3.7.0</reactor-test.version>
@@ -118,7 +118,7 @@
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
 
     <!-- Testing Libraries -->
-    <testcontainers.version>1.20.3</testcontainers.version>
+    <testcontainers.version>1.20.4</testcontainers.version>
     <testcontainers-keycloak.version>3.5.1</testcontainers-keycloak.version>
     <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
 
