@@ -57,7 +57,7 @@
     <reactor-test.version>3.7.0</reactor-test.version>
 
     <!-- gRPC Libraries -->
-    <grpc.version>1.68.1</grpc.version>
+    <grpc.version>1.68.2</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
     <protobuf.version>4.28.3</protobuf.version>
