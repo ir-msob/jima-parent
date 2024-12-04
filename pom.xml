@@ -126,7 +126,7 @@
     <resource.delimiter>@</resource.delimiter>
 
     <!-- Lombok for Java -->
-    <projectlombok.version>1.18.34</projectlombok.version>
+    <projectlombok.version>1.18.36</projectlombok.version>
     <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
 
     <!-- Activiti Process Engine -->
