@@ -114,7 +114,7 @@
     <tika.version>3.0.0</tika.version>
     <bootstrap.version>5.3.3</bootstrap.version>
     <minio.version>8.5.14</minio.version>
-    <modelmapper.version>3.2.1</modelmapper.version>
+    <modelmapper.version>3.2.2</modelmapper.version>
     <webjars-locator.version>0.52</webjars-locator.version>
     <javaparser-core.version>3.26.2</javaparser-core.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
