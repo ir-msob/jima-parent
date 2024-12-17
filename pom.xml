@@ -52,15 +52,15 @@
     <jjwt.version>0.12.6</jjwt.version>
 
     <!-- Redis and Redisson Libraries -->
-    <redisson-spring-boot-starter.version>3.40.0</redisson-spring-boot-starter.version>
     <redisson.version>3.40.2</redisson.version>
+    <redisson-spring-boot-starter.version>3.40.2</redisson-spring-boot-starter.version>
     <redis.version>3.4.0</redis.version>
 
     <!-- Reactor Libraries -->
     <reactor-test.version>3.7.0</reactor-test.version>
 
     <!-- gRPC Libraries -->
-    <grpc.version>1.68.2</grpc.version>
+    <grpc.version>1.69.0</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
     <protobuf.version>4.29.1</protobuf.version>
@@ -82,7 +82,7 @@
 
     <!-- Maven Plugins -->
     <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
-    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
@@ -114,7 +114,7 @@
     <tika.version>3.0.0</tika.version>
     <bootstrap.version>5.3.3</bootstrap.version>
     <minio.version>8.5.14</minio.version>
-    <modelmapper.version>3.2.1</modelmapper.version>
+    <modelmapper.version>3.2.2</modelmapper.version>
     <webjars-locator.version>0.52</webjars-locator.version>
     <javaparser-core.version>3.26.2</javaparser-core.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
