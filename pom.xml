@@ -48,7 +48,7 @@
     <spring-cloud.version>2024.0.0</spring-cloud.version>
 
     <!-- Security Libraries -->
-    <authorization-server.version>1.4.0</authorization-server.version>
+    <authorization-server.version>1.4.1</authorization-server.version>
     <jjwt.version>0.12.6</jjwt.version>
 
     <!-- Redis and Redisson Libraries -->
