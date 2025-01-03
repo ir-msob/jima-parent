@@ -68,7 +68,7 @@
     <!-- JSON and Jackson Libraries -->
     <jackson.version>2.18.2</jackson.version>
     <json-patch.version>1.9</json-patch.version>
-    <json.version>20240303</json.version>
+    <json.version>20241224</json.version>
     <json-path.version>2.9.0</json-path.version>
 
     <!-- Apache Commons Libraries -->
