@@ -53,7 +53,7 @@
 
     <!-- Redis and Redisson Libraries -->
     <redisson.version>3.43.0</redisson.version>
-    <redisson-spring-boot-starter.version>3.43.0</redisson-spring-boot-starter.version>
+    <redisson-spring-boot-starter.version>3.44.0</redisson-spring-boot-starter.version>
     <redis.version>3.4.2</redis.version>
 
     <!-- Reactor Libraries -->
