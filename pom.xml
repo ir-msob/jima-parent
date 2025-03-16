@@ -57,7 +57,7 @@
     <redis.version>3.4.3</redis.version>
 
     <!-- Reactor Libraries -->
-    <reactor-test.version>3.7.3</reactor-test.version>
+    <reactor-test.version>3.7.4</reactor-test.version>
 
     <!-- gRPC Libraries -->
     <grpc.version>1.71.0</grpc.version>
