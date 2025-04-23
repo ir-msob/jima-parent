@@ -45,7 +45,7 @@
 
     <!-- Spring Framework and Related Libraries -->
     <spring-boot.version>3.4.3</spring-boot.version>
-    <spring-cloud.version>2024.0.0</spring-cloud.version>
+    <spring-cloud.version>2024.0.1</spring-cloud.version>
 
     <!-- Security Libraries -->
     <authorization-server.version>1.4.2</authorization-server.version>
@@ -53,7 +53,7 @@
 
     <!-- Redis and Redisson Libraries -->
     <redisson.version>3.45.1</redisson.version>
-    <redisson-spring-boot-starter.version>3.45.0</redisson-spring-boot-starter.version>
+    <redisson-spring-boot-starter.version>3.45.1</redisson-spring-boot-starter.version>
     <redis.version>3.4.4</redis.version>
 
     <!-- Reactor Libraries -->
@@ -104,7 +104,7 @@
     <frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
 
     <!-- Google Guava Library -->
-    <google-guava.version>33.4.0-jre</google-guava.version>
+    <google-guava.version>33.4.8-jre</google-guava.version>
 
     <!-- Java Annotations -->
     <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
