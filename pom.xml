@@ -44,7 +44,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- Spring Framework and Related Libraries -->
-    <spring-boot.version>3.4.3</spring-boot.version>
+    <spring-boot.version>3.4.4</spring-boot.version>
     <spring-cloud.version>2024.0.1</spring-cloud.version>
 
     <!-- Security Libraries -->
