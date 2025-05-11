@@ -52,7 +52,7 @@
     <jjwt.version>0.12.6</jjwt.version>
 
     <!-- Redis and Redisson Libraries -->
-    <redisson.version>3.45.1</redisson.version>
+    <redisson.version>3.46.0</redisson.version>
     <redisson-spring-boot-starter.version>3.46.0</redisson-spring-boot-starter.version>
     <redis.version>3.4.5</redis.version>
 
