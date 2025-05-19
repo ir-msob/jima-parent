@@ -136,7 +136,7 @@
 
     <!-- Swagger -->
     <springfox.version>3.0.0</springfox.version>
-    <springfox-annotations.version>1.6.15</springfox-annotations.version>
+    <springfox-annotations.version>1.6.16</springfox-annotations.version>
   </properties>
 
   <dependencies>
