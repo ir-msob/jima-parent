@@ -48,19 +48,19 @@
     <spring-cloud.version>2024.0.1</spring-cloud.version>
 
     <!-- Security Libraries -->
-    <authorization-server.version>1.4.3</authorization-server.version>
+    <authorization-server.version>1.5.0</authorization-server.version>
     <jjwt.version>0.12.6</jjwt.version>
 
     <!-- Redis and Redisson Libraries -->
-    <redisson.version>3.46.0</redisson.version>
     <redisson-spring-boot-starter.version>3.48.0</redisson-spring-boot-starter.version>
+    <redisson.version>3.48.0</redisson.version>
     <redis.version>3.5.0</redis.version>
 
     <!-- Reactor Libraries -->
     <reactor-test.version>3.7.6</reactor-test.version>
 
     <!-- gRPC Libraries -->
-    <grpc.version>1.72.0</grpc.version>
+    <grpc.version>1.73.0</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
     <protobuf.version>4.31.0</protobuf.version>
