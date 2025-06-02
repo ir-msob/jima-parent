@@ -45,7 +45,7 @@
 
     <!-- Spring Framework and Related Libraries -->
     <spring-boot.version>3.5.0</spring-boot.version>
-    <spring-cloud.version>2024.0.1</spring-cloud.version>
+    <spring-cloud.version>2025.0.0</spring-cloud.version>
 
     <!-- Security Libraries -->
     <authorization-server.version>1.5.0</authorization-server.version>
