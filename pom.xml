@@ -116,7 +116,7 @@
     <minio.version>8.5.17</minio.version>
     <modelmapper.version>3.2.4</modelmapper.version>
     <webjars-locator.version>0.52</webjars-locator.version>
-    <javaparser-core.version>3.26.4</javaparser-core.version>
+    <javaparser-core.version>3.27.0</javaparser-core.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
 
     <!-- Testing Libraries -->
