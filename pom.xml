@@ -118,6 +118,7 @@
     <webjars-locator.version>0.52</webjars-locator.version>
     <javaparser-core.version>3.26.3</javaparser-core.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
+    <google.auto.service.version>1.1.1</google.auto.service.version>
 
     <!-- Testing Libraries -->
     <testcontainers.version>1.20.6</testcontainers.version>

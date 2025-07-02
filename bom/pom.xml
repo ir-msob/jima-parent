@@ -196,6 +196,11 @@
                 <version>${projectlombok.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>com.google.auto.service</groupId>
+                <artifactId>auto-service</artifactId>
+                <version>${google.auto.service.version}</version>
+            </dependency>
 
             <!-- Office -->
             <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
