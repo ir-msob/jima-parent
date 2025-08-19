@@ -49,7 +49,7 @@
 
     <!-- Security Libraries -->
     <authorization-server.version>1.5.1</authorization-server.version>
-    <jjwt.version>0.12.6</jjwt.version>
+    <jjwt.version>0.12.7</jjwt.version>
 
     <!-- Redis and Redisson Libraries -->
     <redisson-spring-boot-starter.version>3.50.0</redisson-spring-boot-starter.version>
