@@ -112,7 +112,7 @@
     <!-- Other Libraries -->
     <reflections.version>0.10.2</reflections.version>
     <tika.version>3.2.3</tika.version>
-    <bootstrap.version>5.3.7</bootstrap.version>
+    <bootstrap.version>5.3.8</bootstrap.version>
     <minio.version>8.5.17</minio.version>
     <modelmapper.version>3.2.4</modelmapper.version>
     <webjars-locator.version>0.52</webjars-locator.version>
