@@ -60,10 +60,12 @@
     <reactor-test.version>3.7.11</reactor-test.version>
 
     <!-- gRPC Libraries -->
-    <grpc.version>1.75.0</grpc.version>
     <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
     <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-    <protobuf.version>4.32.1</protobuf.version>
+    <grpc.version>1.74.0</grpc.version>
+    <protobuf-java.version>4.31.1</protobuf-java.version>
+    <spring-grpc.version>0.11.0</spring-grpc.version>
+    <protobuf-maven-plugin.version>3.8.0</protobuf-maven-plugin.version>
 
     <!-- JSON and Jackson Libraries -->
     <jackson.version>2.20.0</jackson.version>
@@ -92,7 +94,6 @@
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
     <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
     <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
-    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     <maven-plugin-api.version>3.9.11</maven-plugin-api.version>
 
     <!-- Code Coverage Tools -->

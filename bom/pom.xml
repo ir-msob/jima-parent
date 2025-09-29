@@ -39,6 +39,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.grpc/spring-grpc-dependencies -->
+            <dependency>
+                <groupId>org.springframework.grpc</groupId>
+                <artifactId>spring-grpc-dependencies</artifactId>
+                <version>${spring-grpc.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!-- Security -->
             <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
@@ -292,7 +300,7 @@
             <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
-                <version>${protobuf.version}</version>
+                <version>${protobuf-java.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
             <dependency>
