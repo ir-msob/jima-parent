@@ -64,7 +64,7 @@
         <!-- gRPC Libraries -->
         <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
         <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-        <grpc.version>1.74.0</grpc.version>
+        <grpc.version>1.75.0</grpc.version>
         <protobuf-java.version>4.31.1</protobuf-java.version>
         <spring-grpc.version>0.11.0</spring-grpc.version>
         <protobuf-maven-plugin.version>3.8.0</protobuf-maven-plugin.version>
