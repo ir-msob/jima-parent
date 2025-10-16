@@ -64,8 +64,8 @@
         <!-- gRPC Libraries -->
         <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
         <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
-        <grpc.version>1.75.0</grpc.version>
         <protobuf-java.version>4.33.0</protobuf-java.version>
+        <grpc.version>1.76.0</grpc.version>
         <spring-grpc.version>0.11.0</spring-grpc.version>
         <protobuf-maven-plugin.version>3.8.0</protobuf-maven-plugin.version>
 
@@ -94,7 +94,7 @@
         <maven-failsafe-plugin.version>3.5.4</maven-failsafe-plugin.version>
         <maven-plugin-annotations.version>3.15.1</maven-plugin-annotations.version>
         <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
-        <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
         <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
         <maven-plugin-api.version>3.9.11</maven-plugin-api.version>
 
@@ -117,9 +117,9 @@
         <tika.version>3.2.3</tika.version>
         <bootstrap.version>5.3.8</bootstrap.version>
         <minio.version>8.5.17</minio.version>
-        <modelmapper.version>3.2.4</modelmapper.version>
+        <modelmapper.version>3.2.5</modelmapper.version>
         <webjars-locator.version>0.52</webjars-locator.version>
-        <javaparser-core.version>3.27.0</javaparser-core.version>
+        <javaparser-core.version>3.27.1</javaparser-core.version>
         <apache-httpcore.version>4.4.16</apache-httpcore.version>
         <google.auto.service.version>1.1.1</google.auto.service.version>
 
