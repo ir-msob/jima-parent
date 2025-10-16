@@ -99,7 +99,7 @@
         <maven-plugin-api.version>3.9.11</maven-plugin-api.version>
 
         <!-- Code Coverage Tools -->
-        <jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
 
         <!-- JavaScript and Node.js Tools -->
         <npm.version>10.2.5</npm.version>
