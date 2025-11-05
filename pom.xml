@@ -70,7 +70,7 @@
         <protobuf-maven-plugin.version>3.8.0</protobuf-maven-plugin.version>
 
         <!-- JSON and Jackson Libraries -->
-        <jackson.version>2.20.0</jackson.version>
+        <jackson.version>2.20.1</jackson.version>
         <json-patch.version>1.9</json-patch.version>
         <json.version>20250517</json.version>
         <json-path.version>2.9.0</json-path.version>
