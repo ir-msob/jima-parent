@@ -59,7 +59,7 @@
         <redis.version>3.5.5</redis.version>
 
         <!-- Reactor Libraries -->
-        <reactor-test.version>3.7.12</reactor-test.version>
+        <reactor-test.version>3.8.0</reactor-test.version>
 
         <!-- gRPC Libraries -->
         <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
