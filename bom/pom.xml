@@ -392,6 +392,17 @@
                 <artifactId>activiti-spring-boot-starter</artifactId>
                 <version>${activiti.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.camunda</groupId>
+                <artifactId>camunda-client-java</artifactId>
+                <version>${camunda-client-java.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.camunda/spring-boot-starter-camunda-sdk -->
+            <dependency>
+                <groupId>io.camunda</groupId>
+                <artifactId>spring-boot-starter-camunda-sdk</artifactId>
+                <version>${spring-boot-starter-camunda-sdk.version}</version>
+            </dependency>
 
             <!-- Front -->
             <!-- https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin -->
