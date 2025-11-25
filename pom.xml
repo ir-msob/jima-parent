@@ -82,7 +82,7 @@
 
         <!-- Apache POI and Office Libraries -->
         <apache-poi.version>5.5.0</apache-poi.version>
-        <spring-batch-excel.version>0.1.1</spring-batch-excel.version>
+        <spring-batch-excel.version>0.2.0</spring-batch-excel.version>
 
         <!-- Maven Plugins -->
         <maven-plugin-plugin.version>3.15.2</maven-plugin-plugin.version>
