@@ -50,7 +50,7 @@
         <spring-cloud.version>2025.1.0</spring-cloud.version>
 
         <!-- Security Libraries -->
-        <authorization-server.version>1.5.3</authorization-server.version>
+        <authorization-server.version>7.0.0</authorization-server.version>
         <jjwt.version>0.13.0</jjwt.version>
 
         <!-- Redis and Redisson Libraries -->
