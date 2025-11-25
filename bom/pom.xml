@@ -386,6 +386,18 @@
                 <artifactId>minio</artifactId>
                 <version>${minio.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>s3</artifactId>
+                <version>${s3.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/netty-nio-client -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>netty-nio-client</artifactId>
+                <version>${s3.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
             <dependency>
                 <groupId>org.activiti</groupId>
