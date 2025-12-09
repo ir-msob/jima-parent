@@ -138,7 +138,7 @@
 
         <!-- Process Engine -->
         <activiti.version>7.1.0.M6</activiti.version>
-        <spring-boot-starter-camunda-sdk.version>8.8.5</spring-boot-starter-camunda-sdk.version>
+        <spring-boot-starter-camunda-sdk.version>8.8.7</spring-boot-starter-camunda-sdk.version>
         <camunda-client-java.version>8.8.5</camunda-client-java.version>
 
         <!-- Swagger -->
