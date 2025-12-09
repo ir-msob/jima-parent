@@ -81,7 +81,7 @@
         <apache-commons-io.version>2.21.0</apache-commons-io.version>
 
         <!-- Apache POI and Office Libraries -->
-        <apache-poi.version>5.5.0</apache-poi.version>
+        <apache-poi.version>5.5.1</apache-poi.version>
         <spring-batch-excel.version>0.2.0</spring-batch-excel.version>
 
         <!-- Maven Plugins -->
