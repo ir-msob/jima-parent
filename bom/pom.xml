@@ -242,6 +242,12 @@
                 <artifactId>testcontainers-keycloak</artifactId>
                 <version>${testcontainers-keycloak.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.testcontainers/postgresql -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${testcontainers-postgresql.version}</version>
+            </dependency>
 
             <!-- gRPC -->
             <!-- https://mvnrepository.com/artifact/com.salesforce.servicelibs/reactor-grpc-stub -->
