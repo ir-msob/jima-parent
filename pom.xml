@@ -128,7 +128,7 @@
         <testcontainers.version>1.21.4</testcontainers.version>
         <testcontainers-keycloak.version>4.0.1</testcontainers-keycloak.version>
         <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
-        <testcontainers-postgresql.version>1.21.3</testcontainers-postgresql.version>
+        <testcontainers-postgresql.version>1.21.4</testcontainers-postgresql.version>
 
         <!-- Delimiters -->
         <resource.delimiter>@</resource.delimiter>
