@@ -48,6 +48,8 @@
         <!-- Spring Framework and Related Libraries -->
         <spring-boot.version>4.0.1</spring-boot.version>
         <spring-cloud.version>2025.1.0</spring-cloud.version>
+<!--        <spring-boot.version>3.5.9</spring-boot.version>-->
+<!--        <spring-cloud.version>2025.0.1</spring-cloud.version>-->
 
         <!-- Security Libraries -->
         <authorization-server.version>7.0.2</authorization-server.version>
@@ -200,19 +202,6 @@
                             <version>${projectlombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-
-            <!-- GraalVM Native Image Maven Plugin -->
-            <plugin>
-                <groupId>org.graalvm.buildtools</groupId>
-                <artifactId>native-maven-plugin</artifactId>
-                <configuration>
-                    <buildArgs>
-                        <buildArg>-H:+ReportExceptionStackTraces</buildArg>
-                        <buildArg>--verbose</buildArg>
-                        <!--  FIXME          <buildArg>&#45;&#45;initialize-at-build-time='org.jooq.SQLDialect$ThirdParty'</buildArg>-->
-                    </buildArgs>
                 </configuration>
             </plugin>
 
