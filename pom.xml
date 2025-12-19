@@ -46,7 +46,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Spring Framework and Related Libraries -->
-        <spring-boot.version>4.0.0</spring-boot.version>
+        <spring-boot.version>4.0.1</spring-boot.version>
         <spring-cloud.version>2025.1.0</spring-cloud.version>
 
         <!-- Security Libraries -->
