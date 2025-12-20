@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
@@ -38,7 +38,7 @@
         <jima-commons.version>1.3.1</jima-commons.version>
 
         <!-- Java and Maven Compiler Settings -->
-        <java.version>25</java.version>
+        <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
@@ -48,11 +48,8 @@
         <!-- Spring Framework and Related Libraries -->
         <spring-boot.version>4.0.1</spring-boot.version>
         <spring-cloud.version>2025.1.0</spring-cloud.version>
-<!--        <spring-boot.version>3.5.9</spring-boot.version>-->
-<!--        <spring-cloud.version>2025.0.1</spring-cloud.version>-->
 
         <!-- Security Libraries -->
-        <authorization-server.version>7.0.2</authorization-server.version>
         <jjwt.version>0.13.0</jjwt.version>
 
         <!-- Redis and Redisson Libraries -->
@@ -64,15 +61,12 @@
         <reactor-test.version>3.8.1</reactor-test.version>
 
         <!-- gRPC Libraries -->
-        <grpc-spring-boot-starter.version>3.1.0.RELEASE</grpc-spring-boot-starter.version>
-        <reactor-grpc-stub.version>1.2.4</reactor-grpc-stub.version>
+        <spring-grpc.version>1.0.0</spring-grpc.version>
         <protobuf-java.version>4.33.2</protobuf-java.version>
         <grpc.version>1.77.0</grpc.version>
-        <spring-grpc.version>1.0.0</spring-grpc.version>
-        <protobuf-maven-plugin.version>3.8.0</protobuf-maven-plugin.version>
+        <protobuf-maven-plugin.version>4.1.1</protobuf-maven-plugin.version>
 
         <!-- JSON and Jackson Libraries -->
-        <jackson.version>2.20.1</jackson.version>
         <json-patch.version>1.9</json-patch.version>
         <json.version>20250517</json.version>
         <json-path.version>2.10.0</json-path.version>
@@ -88,6 +82,7 @@
 
         <!-- Maven Plugins -->
         <maven-plugin-plugin.version>3.15.2</maven-plugin-plugin.version>
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
         <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
@@ -130,7 +125,6 @@
         <testcontainers.version>1.21.4</testcontainers.version>
         <testcontainers-keycloak.version>4.0.1</testcontainers-keycloak.version>
         <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
-        <testcontainers-postgresql.version>1.21.4</testcontainers-postgresql.version>
 
         <!-- Delimiters -->
         <resource.delimiter>@</resource.delimiter>
@@ -144,9 +138,11 @@
         <spring-boot-starter-camunda-sdk.version>8.8.8</spring-boot-starter-camunda-sdk.version>
         <camunda-client-java.version>8.8.8</camunda-client-java.version>
 
-        <!-- Swagger -->
-        <springfox.version>3.0.0</springfox.version>
-        <springfox-annotations.version>1.6.16</springfox-annotations.version>
+        <!-- DB -->
+        <hibernate-reactive-core.version>4.1.8.Final</hibernate-reactive-core.version>
+
+        <!-- Spring Doc -->
+        <springdoc-openapi-starter-webflux-ui.version>3.0.0</springdoc-openapi-starter-webflux-ui.version>
     </properties>
 
     <dependencies>
@@ -194,7 +190,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
+                    <release>${java.version}</release>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
