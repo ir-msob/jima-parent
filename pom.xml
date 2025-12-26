@@ -3,6 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
          xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.0.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <groupId>ir.msob.jima.parent</groupId>
     <artifactId>jima-parent</artifactId>
     <version>${jima-parent.version}</version>
@@ -55,10 +61,6 @@
         <!-- Redis and Redisson Libraries -->
         <redisson-spring-boot-starter.version>4.0.0</redisson-spring-boot-starter.version>
         <redisson.version>4.0.0</redisson.version>
-        <redis.version>4.0.1</redis.version>
-
-        <!-- Reactor Libraries -->
-        <reactor-test.version>3.8.1</reactor-test.version>
 
         <!-- gRPC Libraries -->
         <spring-grpc.version>1.0.0</spring-grpc.version>
@@ -69,11 +71,8 @@
         <!-- JSON and Jackson Libraries -->
         <json-patch.version>1.9</json-patch.version>
         <json.version>20250517</json.version>
-        <json-path.version>2.10.0</json-path.version>
 
         <!-- Apache Commons Libraries -->
-        <apache-commons-logging.version>1.3.5</apache-commons-logging.version>
-        <apache-commons-lang3.version>3.20.0</apache-commons-lang3.version>
         <apache-commons-io.version>2.21.0</apache-commons-io.version>
 
         <!-- Apache POI and Office Libraries -->
@@ -106,9 +105,6 @@
         <!-- Google Guava Library -->
         <google-guava.version>33.5.0-jre</google-guava.version>
 
-        <!-- Java Annotations -->
-        <jakarta-annotation-api.version>3.0.0</jakarta-annotation-api.version>
-
         <!-- Other Libraries -->
         <reflections.version>0.10.2</reflections.version>
         <tika.version>3.2.3</tika.version>
@@ -118,20 +114,17 @@
         <modelmapper.version>3.2.6</modelmapper.version>
         <webjars-locator.version>0.52</webjars-locator.version>
         <javaparser-core.version>3.27.1</javaparser-core.version>
-        <apache-httpcore.version>4.4.16</apache-httpcore.version>
         <google.auto.service.version>1.1.1</google.auto.service.version>
 
         <!-- Testing Libraries -->
         <testcontainers.version>1.21.4</testcontainers.version>
         <testcontainers-keycloak.version>4.0.1</testcontainers-keycloak.version>
-        <testcontainers-redis.version>1.6.4</testcontainers-redis.version>
         <spring-web-test-client.version>6.0.0</spring-web-test-client.version>
 
         <!-- Delimiters -->
         <resource.delimiter>@</resource.delimiter>
 
         <!-- Lombok for Java -->
-        <projectlombok.version>1.18.42</projectlombok.version>
         <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
 
         <!-- Process Engine -->
@@ -151,7 +144,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${projectlombok.version}</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
@@ -198,7 +190,6 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>${projectlombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
