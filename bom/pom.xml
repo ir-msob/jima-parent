@@ -320,19 +320,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.projectlombok</groupId>
-                    <artifactId>lombok-maven-plugin</artifactId>
-                    <version>${lombok-maven-plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <phase>generate-sources</phase>
-                            <goals>
-                                <goal>delombok</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
                 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-plugin-plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
