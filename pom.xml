@@ -117,7 +117,7 @@
         <google.auto.service.version>1.1.1</google.auto.service.version>
 
         <!-- Testing Libraries -->
-        <testcontainers.version>1.21.4</testcontainers.version>
+        <testcontainers.version>2.0.3</testcontainers.version>
         <testcontainers-keycloak.version>4.0.1</testcontainers-keycloak.version>
         <spring-web-test-client.version>6.0.0</spring-web-test-client.version>
 
