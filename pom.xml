@@ -59,7 +59,7 @@
         <jjwt.version>0.13.0</jjwt.version>
 
         <!-- Redis and Redisson Libraries -->
-        <redisson-spring-boot-starter.version>4.0.0</redisson-spring-boot-starter.version>
+        <redisson-spring-boot-starter.version>4.1.0</redisson-spring-boot-starter.version>
         <redisson.version>4.0.0</redisson.version>
 
         <!-- gRPC Libraries -->
