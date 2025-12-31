@@ -70,7 +70,7 @@
 
         <!-- JSON and Jackson Libraries -->
         <json-patch.version>1.9</json-patch.version>
-        <json.version>20250517</json.version>
+        <json.version>20251224</json.version>
 
         <!-- Apache Commons Libraries -->
         <apache-commons-io.version>2.21.0</apache-commons-io.version>
