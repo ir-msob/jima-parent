@@ -110,7 +110,7 @@
         <tika.version>3.2.3</tika.version>
         <bootstrap.version>5.3.8</bootstrap.version>
         <minio.version>8.6.0</minio.version>
-        <s3.version>2.41.0</s3.version>
+        <s3.version>2.41.3</s3.version>
         <modelmapper.version>3.2.6</modelmapper.version>
         <webjars-locator.version>0.52</webjars-locator.version>
         <javaparser-core.version>3.27.1</javaparser-core.version>
