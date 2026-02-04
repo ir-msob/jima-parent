@@ -136,7 +136,7 @@
         <hibernate-reactive-core.version>4.2.1.Final</hibernate-reactive-core.version>
 
         <!-- Spring Doc -->
-        <springdoc-openapi-starter-webflux-ui.version>3.0.0</springdoc-openapi-starter-webflux-ui.version>
+        <springdoc-openapi-starter-webflux-ui.version>3.0.1</springdoc-openapi-starter-webflux-ui.version>
     </properties>
 
     <dependencies>
