@@ -53,7 +53,7 @@
 
         <!-- Spring Framework and Related Libraries -->
         <spring-boot.version>4.0.2</spring-boot.version>
-        <spring-cloud.version>2025.1.0</spring-cloud.version>
+        <spring-cloud.version>2025.1.1</spring-cloud.version>
 
         <!-- Security Libraries -->
         <jjwt.version>0.13.0</jjwt.version>
