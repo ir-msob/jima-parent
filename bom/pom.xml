@@ -170,6 +170,12 @@
                 <artifactId>bootstrap</artifactId>
                 <version>${bootstrap.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>webjars-locator</artifactId>
+                <version>${webjars-locator.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
             <dependency>
                 <groupId>org.apache.tika</groupId>
