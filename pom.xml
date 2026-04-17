@@ -103,7 +103,7 @@
         <frontend-maven-plugin.version>2.0.0</frontend-maven-plugin.version>
 
         <!-- Google Guava Library -->
-        <google-guava.version>33.5.0-jre</google-guava.version>
+        <google-guava.version>33.6.0-jre</google-guava.version>
 
         <!-- Other Libraries -->
         <reflections.version>0.10.2</reflections.version>
