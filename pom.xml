@@ -109,7 +109,7 @@
         <reflections.version>0.10.2</reflections.version>
         <tika.version>3.3.0</tika.version>
         <bootstrap.version>5.3.8</bootstrap.version>
-        <minio.version>8.6.0</minio.version>
+        <minio.version>9.0.0</minio.version>
         <s3.version>2.42.35</s3.version>
         <modelmapper.version>3.2.6</modelmapper.version>
         <webjars-locator.version>0.52</webjars-locator.version>
