@@ -60,7 +60,7 @@
 
         <!-- Redis and Redisson Libraries -->
         <redisson-spring-boot-starter.version>4.3.0</redisson-spring-boot-starter.version>
-        <redisson.version>4.2.0</redisson.version>
+        <redisson.version>4.3.0</redisson.version>
 
         <!-- gRPC Libraries -->
         <spring-grpc.version>1.0.2</spring-grpc.version>
@@ -110,7 +110,7 @@
         <tika.version>3.2.3</tika.version>
         <bootstrap.version>5.3.8</bootstrap.version>
         <minio.version>8.6.0</minio.version>
-        <s3.version>2.42.2</s3.version>
+        <s3.version>2.42.4</s3.version>
         <modelmapper.version>3.2.6</modelmapper.version>
         <webjars-locator.version>0.52</webjars-locator.version>
         <javaparser-core.version>3.28.0</javaparser-core.version>
@@ -133,7 +133,7 @@
         <camunda-client-java.version>8.8.14</camunda-client-java.version>
 
         <!-- DB -->
-        <hibernate-reactive-core.version>4.2.4.Final</hibernate-reactive-core.version>
+        <hibernate-reactive-core.version>4.2.5.Final</hibernate-reactive-core.version>
 
         <!-- Spring Doc -->
         <springdoc-openapi-starter-webflux-ui.version>3.0.1</springdoc-openapi-starter-webflux-ui.version>
